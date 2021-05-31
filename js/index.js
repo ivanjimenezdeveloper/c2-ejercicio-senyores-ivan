@@ -41,7 +41,9 @@ const anyadirInicial = (senyorElemento, nombre) => {
 const actualizarCantidadSenyores = (senyores) => {
   const cantidadSenyoresElemento = document.querySelector(".cantiadSenyores");
 
-  cantidadSenyoresElemento.textContent = senyores.length;
+  cantidadSenyoresElemento.textContent = senyores.filter(
+    (senyor) => senyor.marcado === true
+  ).length;
 };
 
 for (const { nombre, foto, profesion, estado, twitter, marcado } of senyores) {
