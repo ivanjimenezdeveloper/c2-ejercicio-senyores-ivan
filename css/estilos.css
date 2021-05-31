@@ -20,6 +20,13 @@ body {
 .senyor:hover .avatar img {
   transform: scaleX(-1);
 }
+
+.marcado .avatar img {
+  transform: scaleX(-1);
+}
+.marcado .icono {
+  display: block;
+}
 .avatar {
   border-right: 2px dashed #fff;
   position: relative;
